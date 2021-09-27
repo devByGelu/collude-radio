@@ -1,0 +1,15 @@
+<!-- style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));" -->
+<mat-radio-group
+  class="custom-radio-group"
+  [(ngModel)]="chosen"
+  (change)="handleChangeChosen($event)"
+  [ngStyle]="getRadioGridContainerStyyle()"
+>
+  <mat-radio-button
+    class="custom-radio-button"
+    *ngFor="let option of options"
+    [value]="option"
+  >
+    {{ option }}
+  </mat-radio-button>
+</mat-radio-group>

@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+.custom-radio-button .mat-radio-inner-circle {
+  background-color: transparent !important;
+  background: url("/assets/check_icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mat-radio-checked .mat-radio-outer-circle {
+  display: none;
+}
+
+.mat-radio-checked .mat-radio-inner-circle {
+  transform: scale(1) !important;
+}
